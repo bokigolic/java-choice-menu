@@ -25,6 +25,51 @@ class Main {
 
   public static void main(String[] args) {
 
+    Scanner choiceObj = new Scanner(System.in);
+    System.out.println("Welcome to our Diner! Please select an entree:\n"
+        + "1) steak\n"
+        + "2) wings\n"
+        + "3) salad\n"
+        + "4) pizza\n"
+        + "5) nachos\n"
+        + "6) garlic breed\n"
+        + "7) cevapi\n"
+        + "8) see food\n"
+        + "and any other number for nothing!");
+
+    int choice = choiceObj.nextInt();
+    System.out.println("you choice is: " + choice);
+    switch (choice) {
+      case 1:
+        System.out.println("Here is your steak!");
+        break;
+      case 2:
+        System.out.println("Here is your wings!");
+        break;
+      case 3:
+        System.out.println("Here is your salad!");
+        break;
+      case 4:
+        System.out.println("Here is your pizza!");
+        break;
+      case 5:
+        System.out.println("Here is your nachos!");
+        break;
+      case 6:
+        System.out.println("Here is your garlic breed!");
+        break;
+      case 7:
+        System.out.println("Here is your cevapi!");
+        break;
+      case 8:
+        System.out.println("Here is your see food!");
+        break;
+      default:
+        System.out.println("You want nothing?!");
+        break;
+      }
+      
+
   }
 
 }
