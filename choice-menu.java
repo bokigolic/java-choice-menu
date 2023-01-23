@@ -67,8 +67,35 @@ class Main {
       default:
         System.out.println("You want nothing?!");
         break;
-      }
-      
+    }
+
+    Scanner choiceObj2 = new Scanner(System.in);
+    System.out.println("\nPlease select a drink:\n"
+        + "1) nekrar\n"
+        + "2) soda\n"
+        + "3) lemonade\n"
+        + "4) water\n"
+        + "and any other number for nothing!");
+
+    int choice2 = choiceObj.nextInt();
+
+    switch (choice2) {
+      case 1:
+        System.out.println("Here is your iced tea!");
+        break;
+      case 2:
+        System.out.println("Here is your soda!");
+        break;
+      case 3:
+        System.out.println("Here is your lemonade!");
+        break;
+      case 4:
+        System.out.println("Here is your water!");
+        break;
+      default:
+        System.out.println("You want nothing?!");
+        break;
+    }
 
   }
 
